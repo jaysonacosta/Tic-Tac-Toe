@@ -2,15 +2,15 @@
 
     <div class="board-container">
 
-        <button class="top-left"></button>
-        <button class="top-mid"></button>
-        <button class="top-right"></button>
-        <button class="mid-left"></button>
-        <button class="mid-mid"></button>
-        <button class="mid-right"></button>
-        <button class="bottom-left"></button>
-        <button class="bottom-mid"></button>
-        <button class="bottom-right"></button>
+        <button class="top-left" [disabled]="disabledTL" (click)="placeTokenTL()">{{ topLeft }}</button>
+        <button class="top-mid" [disabled]="disabledTM" (click)="placeTokenTM()"> {{ topMid }} </button>
+        <button class="top-right" [disabled]="disabledTR" (click)="placeTokenTR()"> {{ topRight }} </button>
+        <button class="mid-left" [disabled]="disabledML" (click)="placeTokenML()"> {{ midLeft }} </button>
+        <button class="mid-mid" [disabled]="disabledMM" (click)="placeTokenMM()"> {{ midMid }} </button>
+        <button class="mid-right" [disabled]="disabledMR" (click)="placeTokenMR()"> {{ midRight }} </button>
+        <button class="bottom-left" [disabled]="disabledBL" (click)="placeTokenBL()"> {{ bottomLeft }} </button>
+        <button class="bottom-mid" [disabled]="disabledBM" (click)="placeTokenBM()"> {{ bottomMid }} </button>
+        <button class="bottom-right" [disabled]="disabledBR" (click)="placeTokenBR()"> {{ bottomRight }} </button>
 
     </div>
 

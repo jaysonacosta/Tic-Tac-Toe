@@ -13,28 +13,51 @@
     width: 900px;
 
     border-radius: 100px;
-    background: gray;
+    background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+
 }
 
 button {
     height: 300px;
     width: 300px;
+    
+    font-size: 70px;
+    cursor: pointer;
     border: none;
     background: rgba(255, 255, 255, 0);
+    &:hover {
+        background: rgba(255, 255, 255, .2);
+    }
 }
 
 .top-left, .mid-left, .bottom-left {
-    border-right: 1px solid black;
+    border-right: 3px solid #ffffff99;
 }
 
 .top-right, .mid-right, .bottom-right {
-    border-left: 1px solid black;
+    border-left: 3px solid #ffffff99;
 }
 
 .top-left, .top-mid, .top-right {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #ffffff99;
 }
 
 .mid-left, .mid-mid, .mid-right {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #ffffff99;
+}
+
+.top-left {
+    border-top-left-radius: 100px;
+}
+
+.top-right {
+    border-top-right-radius: 100px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 100px;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 100px;
 }
